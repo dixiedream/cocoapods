@@ -11,8 +11,11 @@ This is a container for using cocoapods without the need to install it
 * How to use
 ```
 #cd project root
-docker run --rm -v $(pwd):/project -w /project smanapp/cocoapods:1.0 ${POD_COMMAND}
+docker run --rm -v $(PWD):/project -w /project smanapp/cocoapods:1.0 ${POD_COMMAND}
+docker run --rm -v $(PWD):/project -v ${PWD}/../iosframework:/iosframework -w /project smanapp/cocoapods:1.0 ${POD_COMMAND}
 ```
+
+* How to use when private framework
 
 ### Contacts ###
 * Repo owner and admin: alessandro.lucarini@smanapp.com
