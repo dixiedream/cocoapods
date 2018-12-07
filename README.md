@@ -1,21 +1,18 @@
-# README #
+# SmanApp - cocoapod container #
 
-This README would normally document whatever steps are necessary to get your application up and running.
-
-### What is this repository for? ###
-
-* Quick summary
-* Version
-* [Learn Markdown](https://bitbucket.org/tutorials/markdowndemo)
+This is a container for using cocoapods without the need to install it
 
 ### How do I get set up? ###
+* Set up
+```
+docker build -t smanapp/cocoapods:1.0 .
+```
 
-* Summary of set up
-* Configuration
-* Dependencies
-* Database configuration
-* How to run tests
-* Deployment instructions
+* How to use
+Cd into the project directory
+```
+docker run --rm -v `pwd`:/project -w /project smanapp/cocoapods:latest ${POD_COMMAND}
+```
 
 ### Contribution guidelines ###
 
