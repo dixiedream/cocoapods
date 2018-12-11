@@ -19,3 +19,4 @@ USER cocoapods
 
 # Entrypoint
 #RUN pod setup
+WORKDIR /project

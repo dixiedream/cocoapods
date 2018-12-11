@@ -1,3 +1,3 @@
 #!/bin/sh
 
-docker build -t smanapp/cocoapods:latest .
+docker build -t smanapp/cocoapods:1.0 .
