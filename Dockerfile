@@ -14,7 +14,4 @@ RUN apk upgrade --update \
 RUN adduser -D cocoapods
 USER cocoapods
 
-# .cocoapods path: /home/cocoapods/.cocoapods
-RUN pod setup 
-
 WORKDIR /project

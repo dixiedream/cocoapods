@@ -11,7 +11,11 @@ This is a container for using cocoapods without the need to install it
 * How to use
 ```
 #cd project root
-docker run --rm -v $(PWD):/project smanapp/cocoapods:1.0 ${POD_COMMAND}
+docker run --rm 
+    -v $(PWD):/project 
+    -v podSpecs:/home/cocoapods 
+    smanapp/cocoapods:1.0 
+    ${POD_COMMAND}
 ```
 
 ### Contacts ###
