@@ -14,6 +14,6 @@ This is a container for using cocoapods without the need to install it
 docker run --rm 
     -v $(PWD):/project 
     -v podSpecs:/home/cocoapods 
-    smanapp/cocoapods:1.0 
+    cocoapods:1.0 
     ${POD_COMMAND}
 ```
