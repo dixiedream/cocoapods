@@ -1,4 +1,4 @@
-FROM alpine:3.8
+FROM alpine
 
 ARG COCOAPOD_VERSION="1.5.3"
 
