@@ -1,4 +1,4 @@
-# SmanApp - cocoapod container #
+# Cocoapod container #
 
 This is a container for using cocoapods without the need to install it
 
@@ -17,6 +17,3 @@ docker run --rm
     smanapp/cocoapods:1.0 
     ${POD_COMMAND}
 ```
-
-### Contacts ###
-* Repo owner and admin: alessandro.lucarini@smanapp.com
